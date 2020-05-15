@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Login">
+
+    <EditText
+            android:layout_width="282dp"
+            android:layout_height="43dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edUsername" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="username" android:layout_marginTop="104dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_login" app:layout_constraintHorizontal_bias="0.495"/>
+    <EditText
+            android:layout_width="284dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:id="@+id/edPsw" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/edUsername" android:hint="password"
+            app:layout_constraintHorizontal_bias="0.495" android:inputType="textPassword"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="88dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.934"
+            android:text="login" android:background="@color/colorPrimary"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/txt_pwdforget"/>
+
+
+        <TextView
+                android:text="create a count"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/txt_register" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="152dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.012"
+                android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/bxChecked"/>
+    <TextView
+            android:text="password forget"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/txt_pwdforget" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="152dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.012"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/bxChecked"
+            android:visibility="invisible" android:onClick="forget_psw" tools:ignore="OnClick"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_login" android:layout_marginTop="52dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" tools:text="log in " android:textSize="30sp"
+            app:layout_constraintHorizontal_bias="0.498"/>
+    <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="104dp"
+            android:layout_height="20dp"
+            android:id="@+id/bxChecked" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.93" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/edPsw" android:text="saved"/>
+</android.support.constraint.ConstraintLayout>
